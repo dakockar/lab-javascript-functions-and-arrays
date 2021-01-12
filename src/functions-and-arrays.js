@@ -62,7 +62,7 @@ function sum(arr) {
       }
     }
     else {
-      throw "Error: Unsupported data type sir or ma'am";  //I couldn't find why it doesn't work.
+      throw new Error("Unsupported data type sir or ma'am"); //Ok, I copied this from the test folder and it worked....
     }
   }
   return mixedSum;
@@ -119,7 +119,6 @@ function avg(arr) {
   //+ is to parse the result into a number and toFixed is to round to two decimals because that was specifically asked in the test cases...
   return +(sumNumbers(newArr)/arr.length).toFixed(2);
 }
-
 
 
 //-------------------
